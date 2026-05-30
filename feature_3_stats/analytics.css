@@ -1,0 +1,166 @@
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header {
+    visibility: hidden;
+}
+
+.stApp{
+    background-image:
+    linear-gradient(
+        rgba(5,8,30,0.70),
+        rgba(5,8,30,0.80)
+    ),
+    url("https://i.pinimg.com/1200x/4c/55/9b/4c559b82bae97c0a4031eab5fd4ae36c.jpg");
+
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+
+    color:white;
+}
+
+.hero-title{
+    text-align:center;
+    font-size:70px;
+    font-weight:bold;
+    color:white;
+
+    text-shadow:
+    0 0 20px #6AA8FF,
+    0 0 50px #6AA8FF;
+}
+
+.hero-subtitle{
+    text-align:center;
+    font-size:24px;
+    color:#D6E4FF;
+
+    margin-bottom:40px;
+}
+
+.glass-box{
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border-radius:30px;
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    padding:30px;
+
+    margin-top:25px;
+    margin-bottom:25px;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.3),
+    0 0 25px rgba(80,120,255,0.25);
+}
+
+[data-testid="metric-container"]{
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,0.10);
+
+    box-shadow:
+    0 0 25px rgba(80,120,255,0.4);
+}
+[data-testid="stVerticalBlockBorderWrapper"]{
+
+background:rgba(255,255,255,0.08);
+
+backdrop-filter:blur(20px);
+
+-webkit-backdrop-filter:blur(20px);
+
+border-radius:25px !important;
+
+border:1px solid rgba(255,255,255,0.15) !important;
+
+padding:20px;
+
+box-shadow:
+0 10px 40px rgba(0,0,0,0.3),
+0 0 30px rgba(100,150,255,0.2);
+
+margin-bottom:25px;
+}
+[data-testid="stSidebar"]{
+    background:rgba(0,0,0,0.4);
+    backdrop-filter:blur(15px);
+}
+
+.stButton > button{
+
+    width:100%;
+
+    border-radius:30px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #6AA8FF,
+        #8F5CFF
+    );
+
+    color:white;
+
+    border:none;
+
+    font-weight:bold;
+
+    padding:12px;
+}
+.stApp::before{
+
+content:"";
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:
+radial-gradient(
+circle at 20% 20%,
+rgba(120,150,255,0.25),
+transparent 30%
+),
+
+radial-gradient(
+circle at 80% 30%,
+rgba(180,120,255,0.25),
+transparent 30%
+);
+
+pointer-events:none;
+}
+h1,h2,h3{
+    color:white !important;
+}
+
+[data-testid="stDataFrame"]{
+    border-radius:20px;
+}
+
+.stPlotlyChart{
+    background:rgba(255,255,255,0.03);
+    border-radius:20px;
+    padding:15px;
+}
